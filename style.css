@@ -1,0 +1,283 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav, footer {
+  overflow: hidden;
+  background-color: rgba(18, 60, 82, 1.0);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+  width: 100% !important;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  color: black;
+}
+.topnav a:not(:first-child):hover {
+  background: white;
+  transition: 0.4s
+}
+
+.topnav a.active {
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+.p-5{
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.my-5{
+  margin-top: 2rem !important;
+}
+
+/*goal*/
+.video{
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+  width: 70%;
+  height: 100%;
+  margin-right: 10px;
+  position:relative;
+  top: 0%;
+  right: 0%;
+}
+@media screen and (max-width: 600px) {
+  iframe.video{
+    width: 30%;
+    height: 100%;
+    margin-top: 15px;
+  }
+  .goalli{
+    padding:  0px 0px 0px 5px !important;
+  }
+  .roboicon{
+    padding-left: 130px;
+    width: 200px;
+    padding: 0;
+  }
+  .goalli, .goal{
+    width: 315px !important;
+  }
+  .row{
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 992px) {
+  iframe.video{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-top: 15px;
+  }
+}
+/*li*/
+li{
+  font-size: 18px;
+  text-align: justify;
+  list-style: none;
+	padding-left: 0 !important;
+  margin: 10px 0;
+
+}
+ul{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.goalli{
+  list-style-type: none;
+  width: 340px;
+}
+.foundWorks{
+  width: 1000px;
+}
+.foundPartners{
+  width: 150px;
+  margin: 0 40px;
+}
+.mechta{
+  width: 250px;
+}
+.partTXT{
+  vertical-align: middle;
+}
+.headerPartner{
+  text-align: center;
+  margin: 20px 0;
+}
+@media screen and (max-width: 600px) {
+  .foundWorks{
+    width: 320px;
+  }
+  .fountPart{
+    display: block;
+  }
+  .foundP{
+    margin: 0 30px;
+  }
+}
+.iconify, .footerUL, a.footerA{
+  color: white;
+  text-decoration: none;
+}
+.logorobot{
+  display: block;
+  width: 100px;
+}
+.iconify{
+  margin: 2% 0 0 18px;
+  border: white 2px solid;
+  border-radius: 50%;
+  padding: 7px;
+}
+.iconifyA{
+  width: fit-content;
+}
+.footerinfo, .footerinfo1{
+  width: 360px;
+  padding: 0;
+}
+.footerinfo1{
+  margin-left: 250px;
+}
+ul.footerUL{
+  display: inline-block;
+}
+i.footerUL{
+  text-align: end;
+}
+.footerSide{
+  width: 200px;
+}
+@media screen and (max-width: 600px) {
+  .footerSide{
+    width: 150px
+  }
+  .footerinfo1{
+    margin-left: 15px;
+    width: 150px;
+  }
+  .footerinfo{
+    margin-left: 165px;
+    width: 170px;
+  }
+}
+hr{
+  color: white;
+}
+/*soviet*/
+.portrait{
+  height: 400px; 
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  object-fit: contain;
+}
+.sovietName{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.foundMember{
+  padding: 10px 20px;
+  height: 550px;
+  margin-bottom: 20px !important;
+}
+.nameMember{
+  height: 50px;
+margin-top: 20px;
+}
+.director{
+  text-align: center;
+}
+.sanzhar{
+  display: block;
+}
+@media screen and (max-width: 600px) {
+  td.foundMember{
+  width: 330px;
+  }
+  .portrait{
+    height: 340px;
+  }
+}
+@media screen and (max-width: 600px) {
+  td{
+    display: block;
+  }
+  .sanzhar{
+    margin-left: 0;
+  }
+  .empty{
+    height: 0;
+  }
+}
+
+.schema, .qwer{
+  width: 100%;
+}
+
+.panel {
+  padding: 5px 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.rekTable, .start, .end{
+  margin: 10px 0 !important;
+  font-size: 18px;
+}
+@media screen and (max-width: 600px){
+  .start, .end{
+    padding-left: 15px;
+  }
+}
+.btn{
+  background-color: rgba(18, 60, 82, 1.0);
+  color: white;
+}
+.btn:hover{
+  color: white;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.7);
+}
+.card{
+  margin: 5px 0;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.2);
+}
+.card-img{
+  width: 75%;
+  height: 50%;
+  margin-left: 12.5%;
+}
